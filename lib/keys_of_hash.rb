@@ -5,7 +5,7 @@ class Hash
     while i < arguments.length
       self.each do |key, value|
         return [value]
-        if key.to_s == arguments[i]
+        if value.to_s == arguments[i]
           output.push(key)
         end
       end
