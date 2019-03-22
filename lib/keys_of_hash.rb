@@ -3,15 +3,10 @@ class Hash
     output = []
     i = 0
     while i < arguments.length
-      if arguments[i].class == String
-        self.each do |key, value|
-          if value == arguments[i]
-            output.push(key)
-          end
+      self.each do |key, value|
+        if value == arguments[i]
+          output.push(key)
         end
-      elsif arguments[i].class == Integer
-        self.each do |key, value|
-          
       end
       i += 1
     end
