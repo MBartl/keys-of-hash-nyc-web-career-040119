@@ -3,6 +3,7 @@ class Hash
     output = []
     i = 0
     while i < arguments.length
+      if arguments[i].class == String
       self.each do |key, value|
         if value.to_s == arguments[i]
           output.push(key)
