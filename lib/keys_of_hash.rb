@@ -9,6 +9,9 @@ class Hash
             output.push(key)
           end
         end
+      elsif arguments[i].class == Integer
+        self.each do |key, value|
+          
       end
       i += 1
     end
