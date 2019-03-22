@@ -4,9 +4,10 @@ class Hash
     i = 0
     while i < arguments.length
       if arguments.class == String
-      self.each do |key, value|
-        if value == arguments[i]
-          output.push(key)
+        self.each do |key, value|
+          if value == arguments[i]
+            output.push(key)
+          end
         end
       end
       i += 1
