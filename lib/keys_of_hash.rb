@@ -3,8 +3,8 @@ class Hash
     output = []
     i = 0
     while i < arguments.length
-      return arguments[i].class
       self.each do |key, value|
+        return key
         if value.to_s == arguments[i]
           output.push(key)
         end
