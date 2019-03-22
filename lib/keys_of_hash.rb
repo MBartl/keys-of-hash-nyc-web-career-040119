@@ -15,5 +15,3 @@ class Hash
 end
 
 
-
-
