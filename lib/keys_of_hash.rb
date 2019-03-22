@@ -1,9 +1,10 @@
 class Hash
   def keys_of(*arguments)
     output = []
-    arguments.each do
+    i = 0
+    while i < arguments.length
       self.each do |key, value|
-        return [value]
+        return [arguments]
         if value == arguments
           output.push(key.to_s)
         end
