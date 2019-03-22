@@ -8,6 +8,7 @@ class Hash
           output.push(key.to_s)
         end
       end
+      i += 1
     end
     return output
   end
