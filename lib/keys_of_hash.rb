@@ -4,8 +4,8 @@ class Hash
     i = 0
     while i < arguments.length
       self.each do |key, value|
-        return [key]
-        if key == arguments
+        return [key.to_s]
+        if key.to_s == arguments[i]
           output.push(key)
         end
       end
